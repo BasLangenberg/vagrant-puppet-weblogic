@@ -1,0 +1,9 @@
+---
+classes: 
+  - role::wlsadmin
+
+weblogic_version: 1213
+jdk_version: 7u55
+
+wlsinstallfile: fmw_12.1.3.0.0_wls.jar
+jdkinstallfile: jdk-7u55-linux-x64.tar.gz
