@@ -18,6 +18,7 @@ Vagrant.configure(2) do |config|
 
   # Shared Directories
   config.vm.synced_folder "C:/DATA/Projects/vagrant-puppet-weblogic", "/opt/puppetcode"
+  config.vm.synced_folder "C:/DATA/Software", "/app/software"
 
   # Run puppet modules
   config.vm.provision "puppet"  do |puppet|
