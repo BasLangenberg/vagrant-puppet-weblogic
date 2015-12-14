@@ -26,7 +26,7 @@ class profile::wlsstart  {
     jdk_home_dir                => "/usr/java/jdk1.7.0_71",
     weblogic_user               => "weblogic",
     weblogic_password           => "weblogic1",
-    adminserver_address         => 'localhost',
+    adminserver_address         => '192.168.50.20',
     adminserver_port            => 7001,
     nodemanager_port            => 5556,
     nodemanager_secure_listener => false,
@@ -34,6 +34,7 @@ class profile::wlsstart  {
     os_group                    => "dba",
     download_dir                => "/app/software",
     log_output                  => true,
+    require                     => Orawls::Nodemanager['nodemanager12c'],
   }
 
 }
