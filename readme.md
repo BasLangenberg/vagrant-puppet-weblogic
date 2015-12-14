@@ -5,7 +5,9 @@ The purpose of this repository is to explain Puppet's role and profile pattern t
 Many thanks to Edwin Biemond and Bert Hajee for the orawls and easy_type modules, which are the core of this solution.
 
 ## How to get this running
-TODO!
+1. Download jdk-7u71-linux-x64.tar.gz and fmw_12.1.3.0.0_wls.jar, stage them in the directory specified in Vagrantfile
+2. Build the base box with Packer. See [My Packer Repo](https://github.com/BasLangenberg/packer-vagrant-builder)
+3. Issue a Vagrant up!
 
 ## Contributers
 
