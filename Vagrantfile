@@ -7,7 +7,7 @@
 # you're doing.
 Vagrant.configure(2) do |config|
 
-  config.vm.box = "oel67"
+  config.vm.box = "OEL68"
   config.vm.hostname = "wls-example"
   config.vm.network "private_network", ip: "192.168.50.20"
 
@@ -17,8 +17,8 @@ Vagrant.configure(2) do |config|
   end
 
   # Shared Directories
-  config.vm.synced_folder "C:/Data/Projects/vagrant-puppet-weblogic", "/opt/puppetcode"
-  config.vm.synced_folder "C:/Data/Software", "/app/software"
+  config.vm.synced_folder "/home/bas/projects/vagrant-puppet-weblogic", "/opt/puppetcode"
+  config.vm.synced_folder "/home/bas/projects/software", "/app/software"
 
   # Run puppet modules
   config.vm.provision "puppet"  do |puppet|
