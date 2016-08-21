@@ -7,7 +7,7 @@
 # you're doing.
 Vagrant.configure(2) do |config|
 
-  config.vm.box = "oel67"
+  config.vm.box = "OEL67"
   config.vm.hostname = "wls-example"
   config.vm.network "private_network", ip: "192.168.50.20"
 
